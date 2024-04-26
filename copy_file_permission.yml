@@ -1,0 +1,14 @@
+---
+
+- name: Copy and Set the Permission of Users
+  hosts: localhost
+
+  tasks:
+  - name: Copy the file
+    copy:
+      src: /home/sameer/Desktop/Personal/ansible/myfile.txt
+      dest: /home/sameer/Desktop/Personal/
+      owner: sameer
+      group: nexia
+      mode: 0777
+

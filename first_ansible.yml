@@ -1,0 +1,8 @@
+---
+
+- name: First Ansible Play Book
+  hosts: localhost
+
+  tasks:
+  - name: Check connectivity
+    ping:

@@ -1,0 +1,14 @@
+---
+
+- name: File Module
+  hosts: localhost
+
+  tasks:
+  - name: Creating a file
+    file:
+      path: /home/sameer/Desktop/Personal/ansible/file_created.txt
+      state: touch
+      owner: sameer
+      group: nexia
+      mode: 764
+      
