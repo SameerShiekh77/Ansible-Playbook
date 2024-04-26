@@ -1,0 +1,18 @@
+---
+
+- name: Delete File and Folder
+  hosts: localhost
+
+  tasks:
+  - name: Delete File
+    file:
+      path: /home/sameer/Desktop/Personal/ansible/file_created.txt
+      state: absent
+      owner: sameer
+      group: nexia
+      mode: 764
+
+  - name: Delete Directory
+    file:
+      path: /home/sameer/Desktop/Personal/ansible/testingfolder
+      state: absent
